@@ -25,7 +25,7 @@ export default function MainHeader() {
               <NavLink href="/work">work </NavLink>
             </li>
             <li>
-              <NavLink href="/service">svice </NavLink>
+              <NavLink href="/service">service </NavLink>
             </li>
             <li>
               <NavLink href="/contact">Hit me up </NavLink>
