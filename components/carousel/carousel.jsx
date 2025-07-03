@@ -1,6 +1,5 @@
 "use client"; // Ensure it's a client-side component
 
-
 import React from "react";
 import { Carousel } from "antd";
 import CarouselItem from "./carousel-item";
@@ -36,7 +35,7 @@ const carouselItem = [
   },
 ];
 const CustomCarousel = () => (
-  <Carousel arrows infinite={false}>
+  <Carousel arrows={true} autoplay={true}>
     {carouselItem.map((item) => (
       <CarouselItem key={item.id} {...item} />
     ))}

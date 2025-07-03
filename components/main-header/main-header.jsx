@@ -12,7 +12,7 @@ export default function MainHeader() {
       <header className="flex items-center justify-between py-8 px-6 bg-[#0c1021] fixed top-0 z-40 w-full text-xl border border-b-indigo-200 ">
         <Link
           href="/"
-          className="flex justify-center items-center hover:skew-y-5 tracking-[0.15em] font-bold gap-8 text-2xl uppercase no-underline "
+          className="flex justify-center items-center hover:skew-y-5 tracking-[0.15em] font-bold gap-8 md:text-2xl text-xl uppercase no-underline "
         >
           portfolio
         </Link>
@@ -36,12 +36,12 @@ export default function MainHeader() {
             className="md:hidden p-2 rounded-md bg-gray-200 hover:bg-gray-300 transition"
             onClick={() => setIsOpen(!isOpen)}
           >
-            {isOpen ? <X size={28} /> : <Menu size={28} />}
+            {isOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
         </nav>
       </header>
       {isOpen && (
-        <ul className=" w-full  md:hidden  space-y-2 bg-[#0c1021] p-4 fixed text-center z-40">
+        <ul className=" grid gap-2.5 w-full text-sm  md:hidden  space-y-2 bg-[#0c1021] p-4 fixed text-center z-40">
           <li>
             <NavLink href="/about">About </NavLink>
           </li>

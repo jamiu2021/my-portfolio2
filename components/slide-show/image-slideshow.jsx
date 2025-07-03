@@ -1,21 +1,19 @@
-'use client'
-import { useEffect, useState } from 'react';
-import Image from 'next/image';
-import classes from './image-slideshow.module.css'
-import cookingImg from '@/assets/cooking.png';
-import constrImg from '@/assets/constructing.png';
- import familyImg  from '@/assets/family-time.png';
- import workingImg from '@/assets/working-on-computer.png';
- import workingoutImg from '@/assets/working-out.png';
-
+"use client";
+import { useEffect, useState } from "react";
+import Image from "next/image";
+import classes from "./image-slideshow.module.css";
+import cookingImg from "@/assets/cooking.png";
+import constrImg from "@/assets/constructing.png";
+import familyImg from "@/assets/family-time.png";
+import workingImg from "@/assets/working-on-computer.png";
+import workingoutImg from "@/assets/working-out.png";
 
 const images = [
-   { image: cookingImg, alt: 'A delicious, juicy burger' },
-  { image: constrImg, alt: 'A delicious, spicy curry' },
-  { image: familyImg, alt: 'Steamed dumplings' },
-  { image: workingImg, alt: 'Mac and cheese' },
-   { image: workingoutImg, alt: 'A delicious pizza' },
-  
+  { image: cookingImg, alt: "A delicious, juicy burger" },
+  { image: constrImg, alt: "A delicious, spicy curry" },
+  { image: familyImg, alt: "Steamed dumplings" },
+  { image: workingImg, alt: "Mac and cheese" },
+  { image: workingoutImg, alt: "A delicious pizza" },
 ];
 
 export default function ImageSlideshow() {
@@ -30,15 +28,14 @@ export default function ImageSlideshow() {
 
     return () => clearInterval(interval);
   }, []);
-  const active = ''
+  const active = "";
   return (
-    
     <div className={classes.slideshow}>
       {images.map((image, index) => (
         <Image
           key={index}
           src={image.image}
-          className={index === currentImageIndex ? classes.active : ''}
+          className={index === currentImageIndex ? classes.active : ""}
           alt={image.alt}
         />
       ))}
