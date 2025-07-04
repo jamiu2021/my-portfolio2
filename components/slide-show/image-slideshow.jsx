@@ -2,18 +2,24 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import classes from "./image-slideshow.module.css";
-import cookingImg from "@/assets/cooking.png";
-import constrImg from "@/assets/constructing.png";
-import familyImg from "@/assets/family-time.png";
-import workingImg from "@/assets/working-on-computer.png";
-import workingoutImg from "@/assets/working-out.png";
+import welcomeImg from "@/assets/code-image4.jpg";
+import creativeImg from "@/assets/code-image1.jpg";
+import planningImg from "@/assets/code-image5.jpg";
+import innovationImg from "@/assets/code-image2.jpg";
+import teamworkImg from "@/assets/code-image8.jpg";
+import visionImg from "@/assets/code-image3.jpg";
+import excellentImg from "@/assets/code-image7.jpg";
+import successImg from "@/assets/code-image6.jpg";
 
 const images = [
-  { image: cookingImg, alt: "A delicious, juicy burger" },
-  { image: constrImg, alt: "A delicious, spicy curry" },
-  { image: familyImg, alt: "Steamed dumplings" },
-  { image: workingImg, alt: "Mac and cheese" },
-  { image: workingoutImg, alt: "A delicious pizza" },
+  { image: welcomeImg, alt: "welcome" },
+  { image: creativeImg, alt: "creative" },
+  { image: planningImg, alt: "planning" },
+  { image: innovationImg, alt: "innovative" },
+  { image: teamworkImg, alt: "teamwork" },
+  { image: visionImg, alt: "vision" },
+  { image: excellentImg, alt: "excellent" },
+  { image: successImg, alt: "success" },
 ];
 
 export default function ImageSlideshow() {
