@@ -33,7 +33,7 @@ export default function Home() {
     <div className="flex flex-col items-center justify-center mt-27 md:mt-30 md:mb-30 md:ml-70 md:mr-70">
       <div className="md:mt-40 mt-20 text-center">
         <p className="md:text-3xl text-2xl mb-4">
-          I'm <span className="">{displayedText}</span>,
+          I'm <span className="">{displayedText}</span>
         </p>
         <h1 className="md:text-8xl text-4xl">
           Web Development and design from the future
