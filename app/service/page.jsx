@@ -16,7 +16,7 @@ export default function Service() {
         <strong> turn your web vision into a next level reality.</strong>
       </p>
       <div className="grid md:grid-cols-5 gap-4 mx-5">
-        <div className="md:col-span-2 p-8 border border-indigo-200 rounded-md bg-[#0c1021] shadow-md shadow-indigo-200/50">
+        <div className="md:col-span-2 p-8 border border-indigo-200 hover:bg-gray-900 rounded-md bg-[#0c1021] shadow-md shadow-indigo-200/50">
           <Link href="/contact">
             <h3 className="md:text-2xl text-xl md:mt-10 mb-1 uppercase text-indigo-600">
               Web application
@@ -38,7 +38,7 @@ export default function Service() {
             </strong>
           </Link>
         </div>
-        <div className="md:col-span-3 p-8 border border-indigo-200 rounded-md  shadow-md shadow-indigo-200/50 bg-[#0c1021]">
+        <div className="md:col-span-3 p-8 border border-indigo-200 rounded-md transition  shadow-md shadow-indigo-200/50 hover:bg-gray-900 bg-[#0c1021]">
           <Link href="/contact">
             <h3 className="text-2xl md:mt-10 mb-1 text-indigo-600">Website</h3>
             <p className="mb-8">

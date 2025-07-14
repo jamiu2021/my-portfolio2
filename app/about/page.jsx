@@ -12,7 +12,7 @@ export default function AboutPage() {
             About Me
           </h3>
 
-          <p>
+          <p className="text-lg">
             Hello,I am a dedicated web developer specializing in Next.js,
             TypeScript, and Tailwind CSS. I focus on delivering modern,
             responsive, and user-friendly web applications that meet client
